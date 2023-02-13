@@ -12,6 +12,7 @@ dark red: #55081a;
 
 
 :root {
+  /* color variables */
     --primary-color: #dcdbdb;
     --secondary-color: #00647b; 
     --dark-red: #55081a;
@@ -20,21 +21,24 @@ dark red: #55081a;
     --dark-gray: #2b2b2b;
     --tealbutton1: #0684a0;
     --tealbutton2: #357b70;
+    --white: #ffffff;
+  /* font variables */
+    --body-font-size: 16px;
+    --body-font-weight: 400;
 }
 
 
 body {
     background-color: var(--primary-color);
     font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    /* Sets the font size to 16px */
+    font-weight: var(--body-font-weight);
+    font-size: var(--body-font-size);
     line-height: 1.6;
     /* Sets the line-height to 1.6 */
 }
   
 h1 {
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
 }
   
@@ -81,8 +85,8 @@ button:hover, button:focus {
 
 
 .button__secondary {
-    background-color: turquoise
-    color: #2b2b2b;
+    background-color: var(--tealbutton1);
+    color: var(--white);
 }
 
 
@@ -202,7 +206,7 @@ button:hover, button:focus {
    
     }
     .grid__item {
-      background-color: #99c5ca;
+      background-color: var(--turquoise);
       width: auto;
       min-height: auto;
       margin: 0;
@@ -213,11 +217,8 @@ button:hover, button:focus {
     }
 }
 
-
-
-
 .grid__item {
-    background-color: #99c5ca;
+    background-color: var(--turquoise);
 }
 
 
@@ -234,9 +235,8 @@ button:hover, button:focus {
     grid-gap: 20px;
 }
 
-
-.logo {
-    width: 325px
+#logo {
+    width: 270px
 }
 
 
@@ -310,18 +310,9 @@ button:hover, button:focus {
     h1 {
       font-size: 22px;
     }
-  }
-
-
-
-  button,
-  .button1,
-  .button2,
-  .button3,
-  .my-input {
-  /* your styling goes here */
-  background-color: var(--tealbutton2)
 }
+
+
   
 .navigation-list {
     list-style-type: none;
@@ -330,44 +321,6 @@ button:hover, button:focus {
 }
 
 
-  
-
-
-
-button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: var(--tealbutton2)
-    color: rgb(0, 85, 85);
-    text-decoration: none;
-    /*adds spacing to the button (this will be discussed more in-depth later) */
-    padding: 10px;
-    border-radius: 3px;
-    /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-}
-
-
-.button, button {
-    /* overwrites browser defaults and resets the border */
-    border: none;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the button */
-    background-color: #357b70;
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 3px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    transition-duration: 0.2s;
-    transition-property: opacity;
-}
   
 button:hover,
 button:focus,
@@ -381,23 +334,38 @@ button:focus,
 
 
 
-.button, button {
-    /* overwrites browser defaults */
-    /* resets the border */
-    border: none;
+button,
+  .button1,
+  .button2,
+  .button3,
+  .my-input {
+  /* your styling goes here */
+  border: none;
     display: inline-block;
     /* takes the font from the outer container */
     font-family: inherit;
     /* style button */
-    background-color: teal
-    color: white;
+    background-color: var(--tealbutton1);
+    color: var(--white);
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
     /* width of the border, type, color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid var(--dark-gray);
     transition: 0.2s opacity;
 }
+
+
+a {
+    color: #dad8d8;
+}
+  
+.bg-lighter {
+    background-color: #dcdbdb;
+}
+
+
+
 
 
 @keyframes cloud-move-right {
@@ -474,13 +442,27 @@ button:focus,
 
 
 .griditemlink {
-    color: var(--selected-link)
+    color: var(--dark-gray)
+}
+
+
+#aboutmeinfo {
+    text-align: center;
 }
 
 
 
+#skillstable {  
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
+#cvlink {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 
 
 
