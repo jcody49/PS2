@@ -52,7 +52,7 @@ h3 {
 
 
 a {
-    color: #00647b
+    color: #00647b;
 }
   
 a:hover, a:focus {
@@ -62,12 +62,12 @@ a:hover, a:focus {
 
 a:visited {
     /* visited link */
-    color: #55081a
+    color: #55081a;
 }
   
 a:active {
     /* selected link */
-    color: #00525d
+    color: #00525d;
 }
 
 
@@ -652,8 +652,9 @@ a {
 
 
 .griditemlink {
-    color: #2b2b2b
+  color: var(--tealbutton1);
 }
+
 
 
 #aboutmeinfo {
@@ -677,6 +678,7 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
+
 
 
 
