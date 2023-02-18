@@ -675,13 +675,15 @@ a {
 }
 
 #cvbutton {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-
-
-
+#credit {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 
