@@ -692,3 +692,31 @@ a {
 }
 
 
+.sample-button{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.credit{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  font-size: small; 
+}
+
+.about-body{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+.about-image{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-right: 75px;
+  margin-left: 75px;
+}
