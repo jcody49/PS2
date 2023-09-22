@@ -12,8 +12,12 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-               
-        <link rel="stylesheet" type="text/css" href="css/style.production.css">    
+
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->    
             
     </head>
         
@@ -41,63 +45,137 @@
         
         
         </header><br>
+
         <!-- Main content -->
- 
-        
         <section>
             <h1>Work</h1>
             <div class="grid">
-                <!-- Grid items will live here -->
+
+                <!-- GRID ITEMS -->
+
+                <!--Pokedex grid item-->
                 <div class="grid__item">
-                    <h2>Mobile Web App: <a href="https://jcody49.github.io/simple-js-app/#" class="griditemlink">Pokedex</a></h2>
+                    <h2 class="d-flex justify-content-center">Web App: <a href="https://jcody49.github.io/simple-js-app/#" class="griditemlink"> Pokedex</a></h2>
                     <p>
-                        I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                        <image ><img src="img/main-page.png" alt="screen shot of pokedex" id="pokedex__screenshot" class="thumbnail img-fluid"></image>
                     </p>
+                    <div class="d-flex justify-content-center">
+                        <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#pokedexModal">
+                            Description
+                        </button>
+                    </div>
                 </div>
 
+                <!--myFlix grid item-->
                 <div class="grid__item">
-                    <h2>Mobile Web App: <a href="https://jcody49.github.io/To-Do-List-App/" class="griditemlink">To-Do List</a></h2>
+                    <h2 class="d-flex justify-content-center">Mobile Web App: MyFlix</h2>
+                    <p>
+                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
+                    </p>
+                    <a href="#" class="griditemlink">See project on GitHub</a>
+                </div>
+
+                <!--meet grid item-->
+                <div class="grid__item">
+                    <h2 class="d-flex justify-content-center">Progressive Web App: <a href="https://jcody49.github.io/Meet/" class="griditemlink"> Meet </a></h2>
+                    <p>
+                    For this project, a big focus was on test-driven development and behavior-driven development. This project represents my first big dive into writing serverless functions, unit tests, integration tests, end-to-end testing, and user acceptance tests. For authenticating, I made use of Google OAuth authentication. I was able to implement Object-Oriented Programming with my alerts. Being that this is a Progressive Web Application, it is able to run offline and can be downloaded to your computer or mobile device. Last, I was able to integrate data visualizations with Recharts.
+                    </p>
+                    <a href="#" class="griditemlink">See project on GitHub</a>
+                </div>
+
+                <!--hello-world grid item-->
+                <div class="grid__item">
+                    <h2 class="d-flex justify-content-center">React Native App: <a href="" class="griditemlink">Hello World!</a></h2>
                     <p>
                     This project shows my first exposure to jQuery and event listeners. I was able to build Javascript so that the user could add something to the list, and I included event listeners for when a list item was clicked on its 'x', the item would get removed. Also, if an item was double-clicked, it would get a strikethrough in its CSS styling.
                     </p>
                     
                 </div>
 
-                <div class="grid__item">
-                    <h2>Mobile Web App: MyFlix</h2>
-                    <p>
-                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-                    </p>
-                    <a href="#" class="griditemlink">See project on GitHub</a>
-                </div>
+            </div>
 
-                <div class="grid__item">
-                    <h2>Mobile web app</h2>
-                    <p>
-                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-                    </p>
-                    <a href="#" class="griditemlink">See project on GitHub</a>
-                </div>
 
-                <div class="grid__item">
-                    <h2>Mobile web app</h2>
-                    <p>
-                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-                    </p>
-                    <a href="#" class="griditemlink">See project on GitHub</a>
-                </div>
+            <!-- MODALS -->
 
-                <div class="grid__item">
-                    <h2>Mobile web app</h2>
-                    <p>
-                    Within this project, I was responsible for the frontend. It’s written in React.js. Additionally, I've created the HTML and CSS templates.
-                    </p>
-                    <a href="#" class="griditemlink">See project on GitHub</a>
+
+            <!--pokedex modal-->
+            <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                      <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
                 </div>
             </div>
+
+            <!--myFlix modal-->
+            <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                      <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!--meet modal-->
+            <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                      <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <!--hello-world modal-->
+            <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-center">
+                      <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
         </section><br>
     
-    <!-- Footer with links to social media profiles -->
+        <!-- Footer with links to social media profiles -->
         
 
         <footer class="page-footer">
@@ -110,7 +188,16 @@
             </div>
         </footer>
 
-    
+        <!-- Add jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <!-- Add Popper.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Add Bootstrap JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+
         <script src="js/tota11y.min.js"></script>  
 
     </body>
