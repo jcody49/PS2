@@ -2,217 +2,217 @@
 <html lang="en">
     
         
-    <head>
+  <head>
+      
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jon Cody - My Great Work</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="normalize" type="text/css" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->    
         
-        <meta charset="utf-8"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jon Cody - My Great Work</title>
-        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-        <link rel="normalize" type="text/css" href="css/normalize.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-
-        <link rel="stylesheet" type="text/css" href="css/styles.css">
-        <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->    
-            
-    </head>
+  </head>
         
-    <body>    
-        <header class="page-header">
+  <body>    
+    <header class="page-header">
 
-            <a href="index.html"><img src="img/logo.png" href="index.html" alt="sweet logo" id="logo" class="page-header__item"></a>
-                
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                  <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-                  </li>
-                  <li role="presentation">
-                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-                  </li>
-                </ul>
-            </nav>
-        
-        
-        </header><br>
-
-        <!-- Main content -->
-        <section>
-            <h1>Work</h1>
-            <div class="grid">
-
-                <!-- GRID ITEMS -->
-
-                <!--Pokedex grid item-->
-                <div class="grid__item">
-                    <h2 class="d-flex justify-content-center">Web App: <a href="https://jcody49.github.io/simple-js-app/#" class="griditemlink"> Pokedex</a></h2>
-                    <p>
-                        <image ><img src="img/main-page.png" alt="screen shot of pokedex" id="pokedex__screenshot" class="thumbnail img-fluid"></image>
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#pokedexModal">
-                            Description
-                        </button>
-                    </div>
-                </div>
-
-                <!--myFlix grid item-->
-                <div class="grid__item">
-                    <h2 class="d-flex justify-content-center">Single Page REST App: MyFlix</h2>
-                    <p>
-                        <image ><img src="img/myFlix-screenshot.png" alt="screen shot of myFlix app" id="myFlix-screenshot" class="thumbnail img-fluid" style="max-width: 250px;"></image>
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#myFlix-modal">
-                            Description
-                        </button>
-                    </div>
-                </div>
-
-                <!--meet grid item-->
-                <div class="grid__item">
-                    <h2 class="d-flex justify-content-center">Progressive Web App: <a href="https://jcody49.github.io/Meet/" class="griditemlink"> Meet </a></h2>
-                    <p>
-                        <image ><img src="img/Meet Snapshot.png" alt="screen shot of my Meet app" id="meet-screenshot" class="thumbnail img-fluid"></image>
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#meetModal">
-                            Description
-                        </button>
-                    </div>
-                </div>
-
-                <!--hello-world grid item-->
-                <div class="grid__item">
-                    <h2 class="d-flex justify-content-center">React Native App: <a href="" class="griditemlink">Hello World!</a></h2>
-                    <p>
-                        <image ><img src="img/Meet Snapshot.png" alt="screen shot of my Meet app" id="meet-screenshot" class="thumbnail img-fluid"></image>
-                    </p>
-                    <div class="d-flex justify-content-center">
-                        <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#pokedexModal">
-                            Description
-                        </button>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <!-- MODALS -->
-
-
-            <!--pokedex modal-->
-            <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header d-flex justify-content-center">
-                      <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!--myFlix modal-->
-            <div class="modal fade" id="myFlix-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header d-flex justify-content-center">
-                      <h5 class="modal-title mx-auto" id="exampleModalLabel"> Single Page REST App: myFlix</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        This is one cool bit of code here.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!--meet modal-->
-            <div class="modal fade" id="meetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header d-flex justify-content-center">
-                      <h5 class="modal-title mx-auto" id="exampleModalLabel"> Progressive Web App: Meet</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        For this project, a big focus was on test-driven development and behavior-driven development. This project represents my first big dive into writing serverless functions, unit tests, integration tests, end-to-end testing, and user acceptance tests. For authenticating, I made use of Google OAuth authentication. I was able to implement Object-Oriented Programming with my alerts. Being that this is a Progressive Web Application, it is able to run offline and can be downloaded to your computer or mobile device. Last, I was able to integrate data visualizations with Recharts.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-            <!--hello-world modal-->
-            <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header d-flex justify-content-center">
-                      <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-            </div>
-
-
-
-        </section>
+      <a href="index.html"><img src="img/logo.png" href="index.html" alt="sweet logo" id="logo" class="page-header__item"></a>
+          
+      <nav class="main-navigation page-header__item">
+          <ul role="menubar" class="navigation-list">
+            <li role="presentation">
+              <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+            </li>
+            <li role="presentation">
+              <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+            </li>
+            <li role="presentation">
+              <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            </li>
+            <li role="presentation">
+              <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+            </li>
+          </ul>
+      </nav>
     
-        <!-- Footer with links to social media profiles -->
-        
+    
+    </header><br>
 
-        <footer class="page-footer">
-            <div class="social-media">
-                Find me on: 
-                <!-- Linkdin logo -->
-                <a href = "https://www.linkedin.com/in/jon-cody-054ab8238/" target = "_blank"><img src="img/linkdin.svg" alt="linkdin" width="30"></a>
-                <!-- GitHub logo -->
-                <a href = "https://github.com/jcody49" target = "_blank"><img src="img/github.svg" alt="GitHub" width="30"></a>
+    <!-- Main content -->
+    <section>
+        <h1>Work</h1>
+        <div class="grid">
+
+            <!-- GRID ITEMS -->
+
+            <!--Pokedex grid item-->
+            <div class="grid__item">
+                <h2 class="d-flex justify-content-center">Web App: <a href="https://jcody49.github.io/simple-js-app/#" class="griditemlink"> Pokedex</a></h2>
+                <p>
+                    <image ><img src="img/main-page.png" alt="screen shot of pokedex" id="pokedex__screenshot" class="thumbnail img-fluid"></image>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#pokedexModal">
+                        Description
+                    </button>
+                </div>
             </div>
-        </footer>
 
-        <!-- Add jQuery -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <!--myFlix grid item-->
+            <div class="grid__item">
+                <h2 class="d-flex justify-content-center">Single Page REST App: MyFlix</h2>
+                <p>
+                    <image ><img src="img/myFlix-screenshot.png" alt="screen shot of myFlix app" id="myFlix-screenshot" class="thumbnail img-fluid" style="max-width: 250px;"></image>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#myFlix-modal">
+                        Description
+                    </button>
+                </div>
+            </div>
 
-        <!-- Add Popper.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+            <!--meet grid item-->
+            <div class="grid__item">
+                <h2 class="d-flex justify-content-center">Progressive Web App: <a href="https://jcody49.github.io/Meet/" class="griditemlink"> Meet </a></h2>
+                <p>
+                    <image ><img src="img/Meet Snapshot.png" alt="screen shot of my Meet app" id="meet-screenshot" class="thumbnail img-fluid"></image>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#meetModal">
+                        Description
+                    </button>
+                </div>
+            </div>
 
-        <!-- Add Bootstrap JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
+            <!--hello-world grid item-->
+            <div class="grid__item">
+                <h2 class="d-flex justify-content-center">React Native App: <a href="" class="griditemlink">Hello World!</a></h2>
+                <p>
+                    <image ><img src="img/Meet Snapshot.png" alt="screen shot of my Meet app" id="meet-screenshot" class="thumbnail img-fluid"></image>
+                </p>
+                <div class="d-flex justify-content-center">
+                    <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#pokedexModal">
+                        Description
+                    </button>
+                </div>
+            </div>
+
+        </div>
 
 
-        <script src="js/tota11y.min.js"></script>  
+        <!-- MODALS -->
 
-    </body>
+
+        <!--pokedex modal-->
+        <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                  <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--myFlix modal-->
+        <div class="modal fade" id="myFlix-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                  <h5 class="modal-title mx-auto" id="exampleModalLabel"> Single Page REST App: myFlix</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is one cool bit of code here.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--meet modal-->
+        <div class="modal fade" id="meetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                  <h5 class="modal-title mx-auto" id="exampleModalLabel"> Progressive Web App: Meet</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    For this project, a big focus was on test-driven development and behavior-driven development. This project represents my first big dive into writing serverless functions, unit tests, integration tests, end-to-end testing, and user acceptance tests. For authenticating, I made use of Google OAuth authentication. I was able to implement Object-Oriented Programming with my alerts. Being that this is a Progressive Web Application, it is able to run offline and can be downloaded to your computer or mobile device. Last, I was able to integrate data visualizations with Recharts.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!--hello-world modal-->
+        <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header d-flex justify-content-center">
+                  <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+
+    </section>
+
+    <!-- Footer with links to social media profiles -->
+    
+
+    <footer class="page-footer">
+        <div class="social-media">
+            Find me on: 
+            <!-- Linkdin logo -->
+            <a href = "https://www.linkedin.com/in/jon-cody-054ab8238/" target = "_blank"><img src="img/linkdin.svg" alt="linkdin" width="30"></a>
+            <!-- GitHub logo -->
+            <a href = "https://github.com/jcody49" target = "_blank"><img src="img/github.svg" alt="GitHub" width="30"></a>
+        </div>
+    </footer>
+
+    <!-- Add jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Add Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Add Bootstrap JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <script src="js/tota11y.min.js"></script>  
+
+  </body>
     
 
 </html>
