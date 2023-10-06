@@ -69,7 +69,7 @@
             <!--myFlix grid item-->
             <div class="grid__item">
                 <h2 class="d-flex justify-content-center">Single Page REST App: MyFlix</h2>
-                <p>
+                <p class="d-flex justify-content-center align-items-center">
                     <image ><img src="img/myFlix-screenshot.png" alt="screen shot of myFlix app" id="myFlix-screenshot" class="thumbnail img-fluid" style="max-width: 250px;"></image>
                 </p>
                 <div class="d-flex justify-content-center">
@@ -92,17 +92,17 @@
                 </div>
             </div>
 
-            <!--hello-world grid item-->
+            <!--Chat App grid item-->
             <div class="grid__item">
-                <h2 class="d-flex justify-content-center">React Native App: <a href="" class="griditemlink">Hello World!</a></h2>
-                <p>
-                    <image ><img src="img/Meet Snapshot.png" alt="screen shot of my Meet app" id="meet-screenshot" class="thumbnail img-fluid"></image>
-                </p>
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#pokedexModal">
-                        Description
-                    </button>
-                </div>
+              <h2 class="d-flex justify-content-center">React Native App: <a href="" class="griditemlink">Chat App</a></h2>
+              <p class="d-flex justify-content-center align-items-center">
+                <image ><img src="img/Chat-App.PNG" alt="screen shot of my Chat app" id="chat-app-screenshot" class="thumbnail img-fluid" style="width: 50%; height: 380px;"></image>
+              </p>
+              <div class="d-flex justify-content-center">
+                <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#chat-app-modal">
+                  Description
+                </button>
+              </div>
             </div>
 
         </div>
@@ -138,7 +138,8 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    This is one cool bit of code here.
+                    This project involved building both the back end and front end of a React web application. First, I implemented the Express framework to route server requests and responses. After that, I designed the architecture of my REST API. Following that, I built a non-relational database using MongoDB, configuring the schema and models with Mongoose. Also, I implemented JWT authentication methods and set up the strategies with Passport. The app features password hashing to keep users safe. The API is hosted via Heroku and the MongoDB database has been deployed through MongoDB Atlas. <br><br>
+                    As for the front end, I begun with establishing the React library in my app as well Parcel for its bundling and transpiling capabilities. I created several components for the app using JSX and React Bootstrap: the main view, the sign-up view, the log-in view, the movie view, and the profile view. I also used cards in a responsive grid for the movie layout. In addition, I implemented client-side routing and a navigation bar using a state-based router. Last, I hosted the front end of the app via Netlify.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -165,12 +166,12 @@
             </div>
         </div>
 
-        <!--hello-world modal-->
-        <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <!--Chat App modal-->
+        <div class="modal fade" id="chat-app-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header d-flex justify-content-center">
-                  <h5 class="modal-title mx-auto" id="exampleModalLabel">Web App: Pokedex</h5>
+                  <h5 class="modal-title mx-auto" id="exampleModalLabel"> React Native App: Chat App</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
