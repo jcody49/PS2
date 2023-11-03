@@ -48,68 +48,80 @@
 
     <!-- Main content -->
     <section>
-        <h1>Work</h1>
+        <h1>Work Samples</h1>
         <div class="grid">
 
             <!-- GRID ITEMS -->
 
             <!--Pokedex grid item-->
             <div class="grid__item">
-                <h2 class="d-flex justify-content-center grid-item-title">Web App: <a href="https://jcody49.github.io/simple-js-app/#" class="griditemlink"> Pokedex</a></h2>
-                <p>
+                <h2 class="d-flex justify-content-center grid-item-title"> Pokedex Web App</h2>
+                <p class="d-flex justify-content-center align-items-center">
                     <image><img src="img/main-page.png" alt="screen shot of pokedex" id="pokedex__screenshot" class="thumbnail img-fluid grid-item-image d-flex justify-content-center"></image>
                 </p>
                 <div class="d-flex justify-content-center">
-                    <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#pokedexModal">
+                    <button type="button" class="btn custom-button-color d-flex justify-content-center button-bottom" data-bs-toggle="modal" data-bs-target="#pokedexModal">
                         Description
                     </button>
                 </div>
             </div>
 
-            <!--myFlix grid item-->
+            <!--myFlix React App grid item-->
             <div class="grid__item">
-                <h2 class="d-flex justify-content-center grid-item-title">Single Page REST App: MyFlix</h2>
-                <p class="d-flex justify-content-center align-items-center">
-                    <image><img class="grid-item-image d-flex justify-content-center" src="img/myFlix-screenshot.png" alt="screen shot of myFlix app" id="myFlix-screenshot"></image>
-                </p>
-                <div class="d-flex justify-content-center">
-                  <button 
-                    type="button" 
-                    class="btn custom-button-color d-flex justify-content-center" 
-                    data-bs-toggle="modal" 
-                    data-bs-target="#myFlix-modal">
-                      Description
-                  </button>
-                </div>
-            </div>
-
-            <!--meet grid item-->
-            <div class="grid__item">
-                <h2 class="d-flex justify-content-center grid-item-title">Progressive Web App: <a href="https://jcody49.github.io/Meet/" class="griditemlink"> Meet </a></h2>
-                <p>
-                    <image><img src="img/Meet Snapshot.png" alt="screen shot of my Meet app" id="meet-screenshot" class="thumbnail img-fluid grid-item-image d-flex justify-content-center"></image>
-                </p>
-                <div class="d-flex justify-content-center">
-                    <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#meetModal">
-                        Description
-                    </button>
-                </div>
-            </div>
-
-            <!--Chat App grid item-->
-            <div class="grid__item">
-              <h2 class="d-flex justify-content-center grid-item-title">React Native App: <a href="" class="griditemlink">Chat App</a></h2>
+              <h2 class="d-flex justify-content-center grid-item-title">myFlix React App</h2>
               <p class="d-flex justify-content-center align-items-center">
-                <image class="grid-item-image"><img src="img/Chat-App.PNG" alt="screen shot of my Chat app" id="chat-app-screenshot" class="thumbnail img-fluid grid-item-image d-flex justify-content-center"></image>
+                  <image><img class="grid-item-image d-flex justify-content-center" src="img/myFlix-screenshot.png" alt="screen shot of myFlix app" id="myFlix-screenshot"></image>
               </p>
               <div class="d-flex justify-content-center">
-                <button type="button" class="btn custom-button-color d-flex justify-content-center" data-bs-toggle="modal" data-bs-target="#chat-app-modal">
-                  Description
+                <button type="button" class="btn custom-button-color d-flex justify-content-center button-bottom" data-bs-toggle="modal" data-bs-target="#myFlix-modal">
+                    Description
                 </button>
               </div>
             </div>
 
-        </div>
+            <!--meet grid item-->
+            <div class="grid__item">
+              <h2 class="d-flex justify-content-center grid-item-title">Meet App</h2>
+              <p class="d-flex justify-content-center align-items-center">
+                  <image><img src="img/Meet Snapshot.png" alt="screen shot of my Meet app" id="meet-screenshot" class="thumbnail img-fluid grid-item-image d-flex justify-content-center"></image>
+              </p>
+              <div class="d-flex justify-content-center">
+                  <button type="button" class="btn custom-button-color d-flex justify-content-center button-bottom" data-bs-toggle="modal" data-bs-target="#meetModal">
+                      Description
+                  </button>
+              </div>
+            </div>
+          </div>
+
+            <div class="bottom-row">
+              <!-- Chat App grid item -->
+              <div class="grid__item chat-app-gi" style="grid-column: 2;">
+                <h2 class="d-flex justify-content-center grid-item-title">Chat App</h2>
+                <p class="d-flex justify-content-center align-items-center">
+                  <img src="img/Chat-App.PNG" alt="screen shot of my Chat app" id="chat-app-screenshot" class="thumbnail img-fluid grid-item-image d-flex justify-content-center" style="width: 20%; max-height: 60px;">
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn custom-button-color d-flex justify-content-center button-bottom" data-bs-toggle="modal" data-bs-target="#chat-app-modal">
+                    Description
+                  </button>
+                </div>
+              </div>
+
+
+              <!--myFlix Angular App grid item-->
+              <div class="grid__item myFlix-Angular-gi" style="grid-column: 3;">
+                <h2 class="d-flex justify-content-center grid-item-title">myFlix Angular App</h2>
+                <p class="d-flex justify-content-center align-items-center">
+                  <image class="grid-item-image"><img src="img/myFlix-Angular.png" alt="screen shot of my Chat app" id="chat-app-screenshot" class="thumbnail img-fluid grid-item-image d-flex justify-content-center"></image>
+                </p>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn custom-button-color d-flex justify-content-center button-bottom" data-bs-toggle="modal" data-bs-target="#myFlix-Angular-modal">
+                    Description
+                  </button>
+                </div>
+              </div>
+            </div>
+        
 
 
 
@@ -126,7 +138,11 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
+                    <p>I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.</p>
+                    <p style="text-align: center;">
+                      <a href="https://github.com/jcody49/simple-js-app" target="_blank">See the code on Github</a><br> or <br>
+                      <a href="https://jcody49.github.io/simple-js-app/" target="_blank">Visit the web app</a>
+                    </p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -135,7 +151,7 @@
             </div>
         </div>
 
-        <!--myFlix modal-->
+        <!--myFlix React modal-->
         <div class="modal fade" id="myFlix-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -144,8 +160,14 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    This project involved building both the back end and front end of a React web application. First, I implemented the Express framework to route server requests and responses. After that, I designed the architecture of my REST API. Following that, I built a non-relational database using MongoDB, configuring the schema and models with Mongoose. Also, I implemented JWT authentication methods and set up the strategies with Passport. The app features password hashing to keep users safe. The API is hosted via Heroku and the MongoDB database has been deployed through MongoDB Atlas. <br><br>
-                    As for the front end, I begun with establishing the React library in my app as well Parcel for its bundling and transpiling capabilities. I created several components for the app using JSX and React Bootstrap: the main view, the sign-up view, the log-in view, the movie view, and the profile view. I also used cards in a responsive grid for the movie layout. In addition, I implemented client-side routing and a navigation bar using a state-based router. Last, I hosted the front end of the app via Netlify.
+                  <p>
+                    This project involved building both the back end and front end of a React web application. First, I implemented the Express framework to route server requests and responses. After that, I designed the architecture of my API. Next, I built a non-relational database using MongoDB, configuring the schema and models with Mongoose. Also, I implemented JWT authentication methods and set up the strategies with Passport. The app features password hashing to keep users safe. The API is hosted via Heroku, and the MongoDB database has been deployed through MongoDB Atlas. <br><br>
+                    As for the front end, I began with establishing the React library in my app as well Parcel for its bundling and transpiling capabilities. I created several components for the app using JSX and React Bootstrap: the main view, the sign-up view, the log-in view, the movie view, and the profile view. I also used cards in a responsive grid for the movie layout. In addition, I implemented client-side routing and a navigation bar using a state-based router. Last, I hosted the front end of the app via Netlify.
+                  </p>
+                  <p style="text-align: center;">
+                    Visit the <a href="https://github.com/jcody49/myFlix-client-main" target="_blank">front-end</a> code or the <a href="https://github.com/jcody49/movie_api" target="_blank">back-end</a> code on Github<br> or <br>
+                    <a href="https://myflixmoviepix.netlify.app/" target="_blank">Visit the progressive web app</a>
+                  </p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -163,7 +185,19 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    For this project, a big focus was on test-driven development and behavior-driven development. This project represents my first big dive into writing serverless functions, unit tests, integration tests, end-to-end testing, and user acceptance tests. For authenticating, I made use of Google OAuth authentication. I was able to implement Object-Oriented Programming with my alerts. Being that this is a Progressive Web Application, it is able to run offline and can be downloaded to your computer or mobile device. Last, I was able to integrate data visualizations with Recharts.
+                  <p>
+                    This app grants users to find events going on in their area using Google calendar data. 
+                    For this project, a big focus was on test-driven development and behavior-driven development. 
+                    This project represents my first big dive into writing serverless functions, unit tests, integration tests, end-to-end testing, and user acceptance tests. 
+                    For authenticating, I made use of Google OAuth authentication. 
+                    I was able to implement Object-Oriented Programming with my alerts. 
+                    Being that this is a Progressive Web Application, it is able to run offline and can be downloaded to your computer or mobile device. 
+                    Last, I was able to integrate data visualizations with Recharts.
+                  </p>
+                  <p style="text-align: center;">
+                    <a href="https://github.com/jcody49/Meet" target="_blank">See the code on Github</a><br> or <br>
+                    <a href="https://jcody49.github.io/Meet/" target="_blank">Visit the web app</a>
+                  </p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -174,23 +208,52 @@
 
         <!--Chat App modal-->
         <div class="modal fade" id="chat-app-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header d-flex justify-content-center">
-                  <h5 class="modal-title mx-auto" id="exampleModalLabel"> React Native App: Chat App</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    I developed this web app with HTML, JavaScript, and CSS, and I have integrated the jQuery library and Bootstrap framework into this app. It fetches from a Pokemon API and displays the Pokemon as buttons. The buttons can be clicked to trigger modal functions built into Bootstrap. The modals display the Pokemon images, names, types, and heights.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-center">
+                <h5 class="modal-title mx-auto" id="exampleModalLabel"> React Native App: Chat App</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <p class="modal-body">
+                I developed this mobile app with HTML, JavaScript, and CSS. I designed the app with the React Native platform. This app allows you to message friends with text and multimedia sharing. You can log in, customize your background and begin chatting. Multimedia sharing in this app includes: GPS location sharing, picture sharing, and video sharing. 
+              </p>
+              <p style="text-align: center;">
+                <a href="https://github.com/jcody49/ChatApp" target="_blank">See the code on Github</a><br>
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
               </div>
             </div>
+          </div>
         </div>
 
+        <!--myFlix Angular modal-->
+        <div class="modal fade" id="myFlix-Angular-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-center">
+                <h5 class="modal-title mx-auto" id="exampleModalLabel"> React Native App: Chat App</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <p class="modal-body">
+                  I developed this app with HTML, JavaScript, CSS, and Typescript. 
+                  I designed the app with the Angular framework. 
+                  It allows users to log in, look up movies, view detailed information about the movies, directors, and genres. 
+                  Users can add movies to their favorite movies, and edit the details of their profile page. 
+                  The app makes requests to my movie api, which uses MongoDB to house the data. 
 
+                  https://github.com/jcody49/myFlix-Angular-gh-pages/tree/main
+              </p>
+              <p style="text-align: center;">
+                    <a href="https://github.com/jcody49/myFlix-Angular-gh-pages/tree/main" target="_blank">See the code on Github</a><br> or <br>
+                    <a href="https://jcody49.github.io/myFlix-Angular-gh-pages/" target="_blank">Visit the web app</a>
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
     </section>
 
