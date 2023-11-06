@@ -13,7 +13,7 @@ dark red: #55081a;
 
 :root {
   /* color variables */
-    --primary-color: #dcdbdb;
+    --primary-color: #ffffff;
     --secondary-color: #00647b; 
     --dark-red: #a80027;
     --turquoise: #99c5ca;
@@ -454,4 +454,57 @@ td {
   flex: 1; /* This makes the items take equal space in the row */
   /* Add any necessary styling for the grid items */
 }
+
+.chat-app-gi {
+  grid-column: 2;
+  background: none;
+}
+
+.myFlix-Angular-gi {
+  grid-column: 3;
+  background: none;
+}
+
+@media all and (max-width: 500px) {
+  .grid, .bottom-row {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  img {
+    max-width: 25%; 
+    height: auto;
+  }
+}
+
+/* Background pattern by Subtle Patterns (https:https://www.toptal.com/designers/subtlepatterns/topography/) */
+body {
+  background-image: url('../img/topography.png');
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+
+#logo {
+  display: none;
+  opacity: 100%;
+}
+
+
+
+.grid__item {
+  background: none;
+}
+
+
 
