@@ -7,7 +7,7 @@ dark red: #55081a;
 */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }  
 
 
@@ -311,11 +311,6 @@ button,
     border-bottom: 2px solid var(--dark-gray);
     transition: 0.2s opacity;
 }
-
-
-a {
-    color: #dad8d8;
-}
   
 .bg-lighter {
     background-color: #dcdbdb;
@@ -500,11 +495,103 @@ body {
   opacity: 100%;
 }
 
-
-
 .grid__item {
   background: none;
 }
 
+/* Define a container for the two columns */
+.two-columns {
+  display: flex;
+}
 
+/* Style for the left column */
+.left-column {
+  flex: 1; /* Takes up all available space */
+  padding-right: 20px; /* Add some spacing between columns */
+}
+
+/* Style for the right column */
+.right-column {
+  flex: 1; /* Takes up all available space */
+  text-align: center;
+}
+
+.table-title {
+  text-align: center;
+}
+
+.table-spacing {
+  text-align: center;
+}
+
+/* Center-align the table title and content */
+.table-title,
+.table-spacing {
+  text-align: center;
+}
+
+/* Style the table */
+#skillstable {
+  border-collapse: separate;
+  border-spacing: 20px; /* Adjust the spacing as needed */
+  margin: 0 auto; /* Center the table on the page */
+}
+
+/* Style the table header cells */
+#skillstable th {
+  padding: 10px; /* Add padding for better appearance */
+}
+
+/* Optional: Set a minimum width for the table */
+#skillstable {
+  min-width: 600px; /* Adjust the width as needed */
+}
+
+.subheader {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.centered-pg{
+  text-align: center;
+}
+
+.centered-button{
+  justify-content: center;
+}
+
+.flex-item {
+  text-align: center;
+  margin: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+}
+
+.smaller-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.flex-item {
+  width: 30%;
+  margin: 0.5% 1%; 
+  box-sizing: border-box;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .flex-item {
+      width: 48%;
+      margin: 0.5% 1%; /* Adjust the margin for more spacing on smaller screens */
+  }
+}
+
+.bottom-row {
+  margin-top: 20px; /* Adjust the margin for spacing between top and bottom rows */
+}
 
