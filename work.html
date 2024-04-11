@@ -88,13 +88,25 @@
               <img src="img/myFlix-Angular.png" alt="myFlix Angular screenshot" class="thumbnail img-fluid" style="width: 100%;">
               <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#myFlix-Angular-modal">Description</button>
           </div>
+
+
+          <!-- Cookbook Collective App -->
+          <div class="flex-item myFlix-Angular-gi">
+            <h2>The Cookbook Collective Python App</h2>
+            <img src="img/cookbook_collective.png" alt="Cookbook Collective screenshot" class="thumbnail img-fluid" style="width: 100%;">
+            <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#cookbook-collective-modal">Description</button>
+        </div>
+
         </div>
     </section>
 
+
+
+
+
+    <!-- MODALS -->
     <section>
-        <!-- MODALS -->
-
-
+        
         <!--pokedex modal-->
         <div class="modal fade" id="pokedexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -152,13 +164,7 @@
                 </div>
                 <div class="modal-body">
                   <p>
-                    This app grants users to find events going on in their area using Google calendar data. 
-                    For this project, a big focus was on test-driven development and behavior-driven development. 
-                    This project represents my first big dive into writing serverless functions, unit tests, integration tests, end-to-end testing, and user acceptance tests. 
-                    For authenticating, I made use of Google OAuth authentication. 
-                    I was able to implement Object-Oriented Programming with my alerts. 
-                    Being that this is a Progressive Web Application, it is able to run offline and can be downloaded to your computer or mobile device. 
-                    Last, I was able to integrate data visualizations with Recharts.
+                    I developed a sophisticated application that enables users to discover local events by seamlessly integrating Google Calendar data. Throughout the project, I emphasized test-driven development (TDD) and behavior-driven development (BDD) to ensure the reliability and robustness of the codebase. Key aspects of the project included the implementation of serverless functions, comprehensive testing methodologies (unit tests, integration tests, end-to-end testing, and user acceptance tests), and secure authentication using Google OAuth. Leveraging Object-Oriented Programming principles, I designed and integrated alert functionality to enhance user engagement. As a Progressive Web Application (PWA), the app offers offline functionality and can be downloaded onto various devices for convenient access. Additionally, I incorporated data visualizations using Recharts to provide users with insightful and interactive displays. This project reflects my dedication to delivering high-quality solutions and leveraging cutting-edge technologies to meet user needs effectively.
                   </p>
                   <p style="text-align: center;">
                     <a href="https://github.com/jcody49/Meet" target="_blank">See the code on Github</a><br> or <br>
@@ -181,7 +187,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <p class="modal-body">
-                I developed this mobile app with HTML, JavaScript, and CSS. I designed the app with the React Native platform. This app allows you to message friends with text and multimedia sharing. You can log in, customize your background and begin chatting. Multimedia sharing in this app includes: GPS location sharing, picture sharing, and video sharing. 
+                This comprehensive app boasts real-time messaging capabilities and versatile multimedia sharing features, including GPS locations, images, and videos. Users can personalize their experience with customizable options, ensuring a tailored interface that suits their individual preferences. I conducted exhaustive testing through Xcode and Android Studio to guarantee seamless cross-platform compatibility, delivering a consistent experience across both iOS and Android devices. By integrating a Firestore database, I ensured robust security and efficient client-side storage, prioritizing user privacy and data management. Notably, I implemented a custom ActionSheet feature to streamline user interaction, simplifying tasks such as image selection, photo capture, and location sharing. This project represents a testament to my dedication and expertise in delivering innovative solutions to meet the evolving needs of mobile communication. 
               </p>
               <p style="text-align: center;">
                 <a href="https://github.com/jcody49/ChatApp" target="_blank">See the code on Github</a><br>
@@ -202,16 +208,34 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <p class="modal-body">
-                  I developed this app with HTML, JavaScript, CSS, and Typescript. 
-                  I designed the app with the Angular framework. 
-                  It allows users to log in, look up movies, view detailed information about the movies, directors, and genres. 
-                  Users can add movies to their favorite movies, and edit the details of their profile page. 
-                  The app makes requests to my movie api, which uses MongoDB to house the data. 
-
+                I crafted a dynamic web application using a stack comprising HTML, JavaScript, CSS, and Typescript, harnessing the power and versatility of the Angular framework for its design. This application offers users a seamless experience to explore a vast repository of movies, directors, and genres. With features such as user authentication, users can log in securely to access personalized content. Detailed information about movies, directors, and genres is readily available, empowering users to make informed choices. The ability to add movies to favorites and customize profile details adds a personalized touch to the user experience. Behind the scenes, the application communicates with a robust movie API, which relies on MongoDB to store and manage data efficiently. Together, these elements create a compelling platform for movie enthusiasts to discover, engage with, and enjoy their favorite films.
               </p>
               <p style="text-align: center;">
                     <a href="https://github.com/jcody49/myFlix-Angular-gh-pages/tree/main" target="_blank">See the code on Github</a><br> or <br>
                     <a href="https://jcody49.github.io/myFlix-Angular-gh-pages/" target="_blank">Visit the web app</a>
+              </p>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!--Cookbook Collective App modal-->
+        <div class="modal fade" id="cookbook-collective-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header d-flex justify-content-center">
+                <h5 class="modal-title mx-auto" id="exampleModalLabel"> Cookbook Collective Python App</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <p class="modal-body">
+                The Cookbook Collective is a sophisticated Python recipe app that seamlessly incorporates object-oriented programming principles to organize its functionalities. Leveraging a MySQL database, the app efficiently stores recipe data, while Django serves as its sturdy framework, facilitating smooth interactions. Custom models, meticulously defined and tested, ensure data integrity and reliability. Robust authentication mechanisms, coupled with CSRF protection, guarantee secure user interactions. Matplotlib aids in crafting insightful data visualizations, seamlessly embedded into the HTML interface. Deployment to Heroku, with PostgreSQL as the production database and Gunicorn handling HTTP requests, underscores its scalability and reliability. By managing dependencies through a requirements file and safeguarding sensitive information with environment variables, The Cookbook Collective sets a high standard for recipe apps. 
+              </p>
+              <p style="text-align: center;">
+                <a href="https://github.com/jcody49/recipe_App" target="_blank">See the code on Github</a><br>
+                <a href="https://immense-bastion-00478-585468ff82eb.herokuapp.com/" target="_blank">Visit the web app</a>
               </p>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -229,7 +253,7 @@
         <div class="social-media">
             Find me on: 
             <!-- Linkdin logo -->
-            <a href = "https://www.linkedin.com/in/jon-cody-054ab8238/" target = "_blank"><img src="img/linkdin.svg" alt="linkdin" width="30"></a>
+            <a href = "https://www.linkedin.com/in/jon-cody" target = "_blank"><img src="img/linkdin.svg" alt="linkdin" width="30"></a>
             <!-- GitHub logo -->
             <a href = "https://github.com/jcody49" target = "_blank"><img src="img/github.svg" alt="GitHub" width="30"></a>
         </div>
