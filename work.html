@@ -15,12 +15,15 @@
 
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
 
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <!--<link rel="stylesheet" type="text/css" href="css/style.production.css">-->   
 
+    
   </head>
-        
+  <!--test-->
   <body>  
 
     <header class="page-header">
@@ -45,60 +48,68 @@
     </header><br>
 
 
-  
-    <section class="no-background">
+    <!--test-->
+    <section class="work-samples">
       <h1>Work Samples</h1>
 
-      <!-- Top Row -->
-      <div class="flex-container">
-          <!-- Pokedex Web App -->
-          <div class="flex-item">
-              <h2>Pokedex Web App</h2>
-              <img src="img/main-page.png" alt="Pokedex screenshot" class="thumbnail img-fluid">
-              <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#pokedexModal">Description</button>
+       <div class="work-samples slick-slider" style="margin-top:2%">
+          <!-- Slide 1 -->
+          <div class="project-card">
+              
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#pokedexModal">
+                <h2>Pokedex Web App</h2>
+                <img src="img/main-page.png" alt="Pokedex screenshot" class="project-image">
+              </button>
           </div>
 
-          <!-- myFlix React App -->
-          <div class="flex-item">
-              <h2>myFlix React App</h2>
-              <img src="img/myFlix-screenshot.png" alt="myFlix screenshot" class="thumbnail img-fluid">
-              <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#myFlix-modal">Description</button>
+          <!-- Slide 2 -->
+          <div class="project-card">
+              
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myFlix-modal">
+                <h2>myFlix React App</h2>
+                <img src="img/myFlix-screenshot.png" alt="myFlix screenshot" class="project-image">
+              </button>
           </div>
 
-          <!-- Meet App -->
-          <div class="flex-item">
-              <h2>Meet App</h2>
-              <img src="img/Meet Snapshot.png" alt="Meet screenshot" class="thumbnail img-fluid">
-              <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#meetModal">Description</button>
-          </div>
-      </div>
-
-      <!-- Bottom Row -->
-        <div class="bottom-row flex-container">
-          <!-- Chat App -->
-          <div class="flex-item chat-app-gi">
-              <h2>Chat App</h2>
-              <img src="img/Chat-App.PNG" alt="Chat App screenshot" class="thumbnail img-fluid" style="width: 100%; max-height: 205px;">
-              <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#chat-app-modal">Description</button>
+          <!-- Slide 3 -->
+          <div class="project-card">
+              
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#meetModal">
+                <h2>Meet App</h2>
+                <img src="img/Meet Snapshot.png" alt="Meet screenshot" class="project-image">
+              </button>
           </div>
 
-          <!-- myFlix Angular App -->
-          <div class="flex-item myFlix-Angular-gi">
-              <h2>myFlix Angular App</h2>
-              <img src="img/myFlix-Angular.png" alt="myFlix Angular screenshot" class="thumbnail img-fluid" style="width: 100%;">
-              <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#myFlix-Angular-modal">Description</button>
+          <!-- Slide 4 -->
+          <div class="project-card">
+              
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#chat-app-modal">
+                <h2>Chat App</h2>
+                <img src="img/Chat-App.PNG" alt="Chat App screenshot" class="project-image" style="width: 100%; max-height: 205px;">
+              </button>
           </div>
 
+          <!-- Slide 5 -->
+          <div class="project-card">
+              
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myFlix-Angular-modal">
+                <h2>myFlix Angular App</h2>
+                <img src="img/myFlix-Angular.png" alt="myFlix Angular screenshot" class="project-image" style="width: 100%;">
+              </button>
+          </div>
 
-          <!-- Cookbook Collective App -->
-          <div class="flex-item myFlix-Angular-gi">
-            <h2>The Cookbook Collective Python App</h2>
-            <img src="img/cookbook_collective.png" alt="Cookbook Collective screenshot" class="thumbnail img-fluid" style="width: 100%;">
-            <button type="button" class="btn custom-button-color" data-bs-toggle="modal" data-bs-target="#cookbook-collective-modal">Description</button>
-        </div>
-
+          <!-- Slide 6 -->
+          <div class="project-card">
+              
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#cookbook-collective-modal">
+                <h2 style="font-size: 1.4em;" class="project-title">The Cookbook Collective App</h2>
+                <img src="img/cookbook_collective.png" alt="Cookbook Collective screenshot" class="project-image" style="width: 100%;">
+              </button>
+          </div>
         </div>
     </section>
+
+
 
 
 
@@ -267,10 +278,12 @@
 
     <!-- Add Bootstrap JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="js/tota11y.min.js"></script>  
+    <script src="js/scripts.js"></script>
 
+    
   </body>
     
 

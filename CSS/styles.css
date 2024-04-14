@@ -296,8 +296,8 @@ button,
     /* takes the font from the outer container */
     font-family: inherit;
     /* style button */
-    background-color: var(--tealbutton1);
-    color: var(--white);
+    
+  
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
@@ -589,3 +589,102 @@ body {
   margin-top: 20px; /* Adjust the margin for spacing between top and bottom rows */
 }
 
+
+
+
+
+/* SLICK CAROUSEL */
+.slick-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+.slick-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.slick-slide {
+  flex: 0 0 auto;
+}
+.slick-track {
+  display: flex !important; /* Ensuring the track is displayed as flex */
+}
+.project-card {
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  max-height: 200px; /* Set a maximum height for the project card */
+  overflow: hidden; /* Hide any overflow content */
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth scaling */
+}
+.project-card:hover {
+  transform: scale(1.25); /* Scale up the card on hover */
+  cursor: pointer;
+}
+
+.project-title {
+  max-height: 60px; /* Set a maximum height for the project title */
+  overflow: hidden; /* Hide any overflow content */
+  margin-bottom: 10px; /* Add some space between the title and the image */
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Adjust as needed to ensure consistency */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  margin-bottom: 10px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.slick-prev {
+  left: -40px;
+  color: #000; /* Set default color to black */
+}
+
+.slick-next {
+  right: -40px;
+  color: #000; /* Set default color to black */
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: rgb(5, 158, 219); /* Change color on hover */
+}
+.slick-next,
+.slick-prev {
+  color:#000;
+}
+
+
+.project-card {
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  max-height: 300px; /* Adjust the max-height as needed */
+  overflow: hidden; /* Hide any overflow content */
+  transition: transform 0.2s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.project-image {
+  width: 100%;
+  height: 200px; /* Adjust as needed to ensure consistency */
+  object-fit: cover; /* Ensures the image covers the entire container */
+  margin-bottom: 10px;
+  border-radius: 10px; /* Add rounded corners */
+}
