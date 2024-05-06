@@ -100,25 +100,28 @@ button:hover, button:focus {
 
 .profile__portrait {
     float: left;
+    
 }
 
 
+.profile__portrait {
+  float: left;
+  margin-right: 40px;
+}
 
-
+.profile__portrait {
+  float: left;
+  width: 60%;
+  margin-right: 40px;
+  border-radius: 10%;
+  overflow: hidden; 
+  height: 450px; 
+  margin-top: -14%;
+}
 
 .page-footer {
     clear: both;
 }
-
-
-
-.profile__portrait {
-    float: left;
-    width: 250px;
-    margin-right: 40px;
-}
-
-
 
 
 
@@ -127,16 +130,6 @@ button:hover, button:focus {
     margin: 0 auto;
 }
 
-
-
-
-
-.profile__portrait {
-    float: left;
-    width: 325px;
-    margin-right: 40px;
-    border-radius: 50%;
-}
 
 .page-header {
     display: flex;
@@ -462,7 +455,7 @@ td {
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 40px;
     text-align: center;
   }
 }
@@ -471,6 +464,7 @@ td {
   img {
     max-width: 25%; 
     height: auto;
+    margin-left: 8%;
   }
 }
 
@@ -718,5 +712,31 @@ body {
 
 .navbar-nav .nav-link:hover {
   font-size: 1.1em; /* Increase font size on hover */
+}
+
+/* Apply the rule only on screens wider than 768px */
+@media (min-width: 768px) {
+  .profile__portrait {
+      max-height: 400px; /* Adjust the value as needed */
+      width: auto; /* Allow the width to adjust proportionally */
+      border-radius: 10%;
+      overflow: hidden; /* Hide any overflow if the image exceeds the maximum height */
+  }
+}
+
+
+
+
+/*CASE STUDIES*/
+.case-studies {
+  display: flex;
+  justify-content: center; /* Center the items along the main axis */
+  margin-bottom: 10%;
+  margin-top: 1%;
+}
+
+.project-card {
+  flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
+  max-width: 30%; /* Adjust the maximum width as needed */
 }
 
